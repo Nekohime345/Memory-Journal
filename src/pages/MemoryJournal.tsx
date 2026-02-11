@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 // Changed to type-only import
 import type { Memory, User } from '../types/memory';
 import LoginPage from '../components/auth/LoginPage';

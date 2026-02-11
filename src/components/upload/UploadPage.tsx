@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Calendar, Camera, Upload, Heart } from 'lucide-react';
 // Changed to type-only import
-import type { Memory, User } from '../../types/memory';
+import type { User } from '../../types/memory';
 import Navbar from '../common/Navbar';
 
 interface UploadPageProps {
