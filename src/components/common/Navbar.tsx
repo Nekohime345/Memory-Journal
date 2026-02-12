@@ -13,12 +13,12 @@ const Navbar: React.FC<NavbarProps> = ({ user, onLogout, actionButton }) => {
   // ... (rest of the component remains the same)
   return (
     <nav className="bg-white shadow-md">
-      <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="flex items-center space-x-2">
+      <div className="max-w-7xl mx-auto px-4 py-4 flex flex-wrap sm:flex-nowrap gap-3 justify-between items-center">
+        <div className="flex items-center space-x-2 min-w-0">
           <Camera className="w-6 h-6 text-purple-600" />
-          <span className="text-xl font-bold text-gray-800">Memory Journal</span>
+          <span className="text-xl font-bold text-gray-800 truncate">Memory Journal</span>
         </div>
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-4 w-full sm:w-auto justify-end">
           {user && <span className="text-sm text-gray-600 hidden sm:inline">{user.email}</span>}
           {actionButton}
           <button
