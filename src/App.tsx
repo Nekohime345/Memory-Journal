@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import FlowerButton from './components/common/FlowerButton';
 import SlideshowPage from './pages/SlideshowPage';
 
 function App() {
@@ -28,13 +29,9 @@ function App() {
         >
           "Grateful for the one person who made every moment brighter."
         </p>
-        <button
-          type="button"
-          onClick={() => setShowSlideshow(true)}
-          className="mt-10 px-8 py-3.5 rounded-2xl text-lg font-semibold border border-white/35 bg-white/15 backdrop-blur-md shadow-[0_8px_30px_rgba(0,0,0,0.25)] hover:bg-white/25 hover:scale-[1.02] transition-all"
-        >
-          View Memories
-        </button>
+        <div className="mt-10 flex justify-center">
+          <FlowerButton text="View Memories" onClick={() => setShowSlideshow(true)} />
+        </div>
       </section>
     </main>
   );
